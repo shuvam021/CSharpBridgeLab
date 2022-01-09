@@ -1,7 +1,7 @@
 ﻿using System;
 
 /*
- * https://www.youtube.com/watch?v=GhQdlIFylQ8&t=13901s 
+ * https://www.youtube.com/watch?v=GhQdlIFylQ8&t=13901s
  */
 
 namespace CSharpBridgeLab.Youtube
@@ -45,6 +45,8 @@ namespace CSharpBridgeLab.Youtube
             //float < double < decimal
             double gpa = 3.3;
             bool isMale = true;
+
+            Console.WriteLine($"Student Details {phrase}, {grade}, {age}, {gpa}, {isMale}");
         }
         private static void StringConcept()
         {
@@ -228,7 +230,7 @@ namespace CSharpBridgeLab.Youtube
         public static void MainMethod()
         {
             Console.WriteLine("Message: Accessing Youtube Files! \n\n");
-            
+
             /*
             Ajenda();
             Youtube.MainFile.DrawingShape();

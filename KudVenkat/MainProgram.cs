@@ -6,7 +6,8 @@ namespace CSharpBridgeLab.KudVenkat
     {
         public static void MainMethod()
         {
-            Console.WriteLine("Message: Accessing KudVenkat Files! \n\n");
+            string msg = "Accessing KudVenkat Files!";
+            Console.WriteLine($"Message: {msg} \n\n");
 
             /*
              * part - 19
@@ -25,11 +26,15 @@ namespace CSharpBridgeLab.KudVenkat
             Console.WriteLine(circle2.CalculateArea());
             */
 
+            /*
             // part - 21
-            FullTimeEmployee FTE = new FullTimeEmployee();
-            FTE.FirstName = "Shuvam";
-            FTE.LastName = "Das";
-            FTE.YearlySalary = 5000000.99F;
+            FullTimeEmployee FTE = new FullTimeEmployee
+            {
+                FirstName = "Shuvam",
+                LastName = "Das",
+                YearlySalary = 5000000.99F
+            };
+
             FTE.PrintFullName();
 
             PartTimeEmployee PTE = new PartTimeEmployee();
@@ -37,6 +42,11 @@ namespace CSharpBridgeLab.KudVenkat
             PTE.LastName = "Doe";
             PTE.HourlySalary= 29000.99F;
             PTE.PrintFullName();
+            */
+
+            //part 28
+            StructCustomer customer1 = new StructCustomer(101, "Mark");
+            customer1.PrintDetails();
         }
     }
 }
