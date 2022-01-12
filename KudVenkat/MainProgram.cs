@@ -37,6 +37,15 @@ namespace CSharpBridgeLab.KudVenkat
             Console.WriteLine($"Message: {msg} \n\n");*/
 
             /*
+             * part - 56
+             */
+
+            bool stringEquation = GenericClass.AreEqual<string>("a", "a");
+            bool intEquation = GenericClass.AreEqual<int>(1, 3);
+            Console.WriteLine(stringEquation?"Equal":"NotEqual");
+            Console.WriteLine(intEquation?"Equal":"NotEqual");
+
+            /*
              * part - 45-47 Enum
              *
             SampleCustomer[] sampCustomer = new SampleCustomer[2];
