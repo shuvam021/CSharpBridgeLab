@@ -33,6 +33,12 @@ namespace CSharpBridgeLab.KudVenkat
         }
         public static void MainMethod()
         {
+            /*string msg = "Accessing KudVenkat Files!";
+            Console.WriteLine($"Message: {msg} \n\n");*/
+
+            /*
+             * part - 45-47 Enum
+             *
             SampleCustomer[] sampCustomer = new SampleCustomer[2];
             sampCustomer[0] = new SampleCustomer
             {
@@ -48,9 +54,7 @@ namespace CSharpBridgeLab.KudVenkat
             {
                 Console.WriteLine($"Name = {c.Name} and Gender = {GetGender(c.Gender)}");
             }
-
-            /*string msg = "Accessing KudVenkat Files!";
-            Console.WriteLine($"Message: {msg} \n\n");*/
+            */
 
             /*
              * part - 19
