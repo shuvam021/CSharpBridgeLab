@@ -1,13 +1,56 @@
 ﻿using System;
 
+//https://youtube.com/playlist?list=PLAC325451207E3105
+
 namespace CSharpBridgeLab.KudVenkat
 {
+    public enum Gender
+    {
+        Unknown,
+        Male,
+        Female
+    }
+    class SampleCustomer
+    {
+        public string Name { get; set; }
+        public Gender Gender { get; set; }
+    }
     public class MainProgram
     {
+        public static string GetGender(Gender gender)
+        {
+            switch (gender)
+            {
+                case Gender.Unknown:
+                    return "Unknown";
+                case Gender.Male:
+                    return "Male";
+                case Gender.Female:
+                    return "Female";
+                default:
+                    return "Invalid input";
+            }
+        }
         public static void MainMethod()
         {
-            string msg = "Accessing KudVenkat Files!";
-            Console.WriteLine($"Message: {msg} \n\n");
+            SampleCustomer[] sampCustomer = new SampleCustomer[2];
+            sampCustomer[0] = new SampleCustomer
+            {
+                Gender = Gender.Male,
+                Name = "John"
+            };
+            sampCustomer[1] = new SampleCustomer
+            {
+                Gender = Gender.Female,
+                Name = "Jane"
+            };
+            foreach(SampleCustomer c in sampCustomer)
+            {
+                Console.WriteLine($"Name = {c.Name} and Gender = {GetGender(c.Gender)}");
+            }
+
+            /*string msg = "Accessing KudVenkat Files!";
+            Console.WriteLine($"Message: {msg} \n\n");*/
 
             /*
              * part - 19
@@ -44,9 +87,11 @@ namespace CSharpBridgeLab.KudVenkat
             PTE.PrintFullName();
             */
 
+            /*
             //part 28
             StructCustomer customer1 = new StructCustomer(101, "Mark");
             customer1.PrintDetails();
+            */
         }
     }
 }
